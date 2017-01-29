@@ -1,3 +1,99 @@
-<form class=" well form-horizontal" action=" " method="post" style="padding-left: 10px; min-height: 610px; border:4px; border-bottom-left-radius: 10;">
-    <h2 color="red"> {{id}}</h2>
+<form class=" well form-horizontal" action=" " method="post" style="padding-left: 10px; min-height: 610px; border:4px; border-bottom-left-radius: 10; color:black;">
+
+    <div style="float: right;top:6.5%; right: 9%; position:absolute; width: 34%;">
+        <div class="form-horizontal">
+
+            <div class="col-md-3">
+                <button type="submit" class="btn btn-warning">Edit <span class="glyphicon glyphicon-edit" ></span></button>
+            </div>
+        </div>
+        <div class="form-horizontal">
+
+            <div class="col-md-1">
+                <button type="submit" class="btn btn-warning">Back <span class="glyphicon glyphicon-circle-arrow-left" ></span></button>
+            </div>
+        </div>
+    </div>
+    <!-- Form Name -->
+    <legend>Owner Details</legend>
+
+    <!-- Text input-->
+    <div class="form-group">
+        <div class=" form-horizontal">
+
+            <div class="col-md-4 control-label ">
+                <div class="label-info">
+
+                    <label class="form-control "> Fullname:{{datas.owner}}</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-horizontal">
+
+            <div class="col-md-4 control-label">
+                <div class="label-info">
+
+                    <label class="form-control" name="model">Licern No:{{datas.model}}</label>
+                </div>
+            </div>
+        </div>
+        <div class="form-horizontal">
+
+            <div class="col-md-4 control-label ">
+                <div class="label-info">
+
+                    <label class="form-control">{{datas.model}}</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-horizontal">
+
+            <div class="col-md-4 control-label">
+                <div class="label-info">
+
+                    <label class="form-control">{{datas.model}}</label>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <legend>Car Info</legend>
+
+    <!-- Text input-->
+    <div class="form-group">
+        <div class=" form-horizontal">
+
+            <div class="col-md-4 control-label ">
+                <div class="label-info">
+
+                    <label class="form-control">Plateno:{{datas.plateno}}</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-horizontal">
+
+            <div class="col-md-4 control-label">
+                <div class="label-info">
+                    <label class="form-control">Model: {{datas.model}}</label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+
+        <div class="col-md-4">
+            <button type="submit" class="btn btn-warning">Unpark <span class="glyphicon glyphicon-circle-arrow-left" ></span></button>
+        </div>
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <button class="btn btn-primary" type="button">
+  SlotNo: <span class="badge">4</span>
+</button>
+        </div>
+    </div>
 </form>

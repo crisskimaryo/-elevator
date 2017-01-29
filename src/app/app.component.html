@@ -1,20 +1,22 @@
-
-  
 <div id='browser'>
-  <div id='browser-bar'>
-    <div class='circles'></div>
-    <div class='circles'></div>
-    <div class='circles'></div>
-    <p style="font-family:serif; "><b>Car Carking System</b> </p>
-    <span class='arrow entypo-resize-full'></span>
-  </div>
-  <div id='content'>
-    <div id='left'>
-      <div id='map'>
+    <div id='browser-bar'>
+        <div class='circles'></div>
+        <div class='circles'></div>
+        <div class='circles'></div>
 
-
-<router-outlet></router-outlet>
- </div>
-   
+        <p style="font-family:serif; "> </p>
+        <span class='arrow entypo-resize-full'></span>
     </div>
-   <app-login></app-login> 
+    <div id='content'>
+        <div id='left'>
+            <div id='map'>
+
+
+                <router-outlet></router-outlet>
+            </div>
+
+        </div>
+        <app-login></app-login>
+    </div>
+
+</div>

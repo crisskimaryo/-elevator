@@ -1,35 +1,35 @@
- <form class=" well form-horizontal" action=" " method="post"  style="padding-left: 10px; min-height: 610px;" >
-<fieldset >
+<form class=" well form-horizontal" action=" " method="post" style="padding-left: 10px; min-height: 610px;" #inputdata>
+    <fieldset>
 
-<!-- Form Name -->
-<legend>Vehicle Details</legend>
+        <!-- Form Name -->
+        <legend>Vehicle Details</legend>
 
-<!-- Text input-->
+        <!-- Text input-->
 
-<div class="form-group" >
-  
-  <div class="col-md-4 inputGroupContainer">
-  <div class="input-group">
-  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-  <input  name="first_name" placeholder="Plate Number" class="form-control"  type="text">
-    </div>
-  </div>
-</div>
+        <div class="form-group">
 
-<!-- Text input-->
+            <div class="col-md-4 inputGroupContainer">
+                <div class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                    <input name="Plate Number" placeholder="Plate Number" class="form-control" [(ngModel)]="plateNumber" inputdata.platenumber type="text">
+                </div>
+            </div>
+        </div>
 
-<div class="form-group">
+        <!-- Text input-->
 
-    <div class="col-md-4 inputGroupContainer">
-    <div class="input-group">
-  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-  <input name="last_name" placeholder="Model /Type" class="form-control"  type="text">
-    </div>
-  </div>
-</div>
+        <div class="form-group">
 
-<!-- Text input-->
-       <!--<div class="form-group">
+            <div class="col-md-4 inputGroupContainer">
+                <div class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                    <input name="last_name" placeholder="Model /Type" class="form-control" [(ngModel)]="modeltype" inputdata.modeltype type="text">
+                </div>
+            </div>
+        </div>
+
+        <!-- Text input-->
+        <!--<div class="form-group">
   <label class="col-md-4 control-label">E-Mail</label>  
     <div class="col-md-4 inputGroupContainer">
     <div class="input-group">
@@ -40,85 +40,85 @@
 </div>-->
 
 
-<!-- Text input-->
-     <legend>User Details</legend>  
-     
-<!-- Text input-->
+        <!-- Text input-->
+        <legend>User Details</legend>
 
-<div class="form-group" >
-  
-  <div class="col-md-4 inputGroupContainer">
-  <div class="input-group">
-  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-  <input  name="first_name" placeholder="First Name" class="form-control"  type="text">
-    </div>
-  </div>
-</div>
+        <!-- Text input-->
 
-<!-- Text input-->
+        <div class="form-group">
 
-<div class="form-group">
+            <div class="col-md-4 inputGroupContainer">
+                <div class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                    <input name="first_name" placeholder="First Name" class="form-control" [(ngModel)]="name" type="text">
+                </div>
+            </div>
+        </div>
 
-    <div class="col-md-4 inputGroupContainer">
-    <div class="input-group">
-  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-  <input name="last_name" placeholder="Last Name" class="form-control"  type="text">
-    </div>
-  </div>
-</div>
-<div class="form-group">
- 
-    <div class="col-md-4 inputGroupContainer">
-    <div class="input-group">
-        <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
-  <input name="phone" placeholder="(845)555-1212" class="form-control" type="text">
-    </div>
-  </div>
-</div>
+        <!-- Text input-->
 
-<!-- Text input-->
-      
-<div class="form-group">
-  
-    <div class="col-md-4 inputGroupContainer">
-    <div class="input-group">
-        <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
-  <input name="address" placeholder="Address" class="form-control" type="text">
-    </div>
-  </div>
-</div>
+        <div class="form-group">
 
-<!-- Text input-->
- 
-<div class="form-group">
-    
-    <div class="col-md-4 inputGroupContainer">
-    <div class="input-group">
-        <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
-  <input name="city" placeholder="city" class="form-control"  type="text">
-    </div>
-  </div>
-</div>
+            <div class="col-md-4 inputGroupContainer">
+                <div class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                    <input name="last_name" placeholder="Last Name" class="form-control" type="text">
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
 
-<!-- Select Basic -->
-   
-<div class="form-group"> 
-  
-    <div class="col-md-4 selectContainer">
-    <div class="input-group">
-        <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
-    <select name="state" class="form-control selectpicker" >
+            <div class="col-md-4 inputGroupContainer">
+                <div class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+                    <input name="phone" placeholder="(845)555-1212" class="form-control" type="text">
+                </div>
+            </div>
+        </div>
+
+        <!-- Text input-->
+
+        <div class="form-group">
+
+            <div class="col-md-4 inputGroupContainer">
+                <div class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+                    <input name="address" placeholder="Address" class="form-control" type="text">
+                </div>
+            </div>
+        </div>
+
+        <!-- Text input-->
+
+        <div class="form-group">
+
+            <div class="col-md-4 inputGroupContainer">
+                <div class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+                    <input name="city" placeholder="city" class="form-control" type="text">
+                </div>
+            </div>
+        </div>
+
+        <!-- Select Basic -->
+
+        <div class="form-group">
+
+            <div class="col-md-4 selectContainer">
+                <div class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
+                    <select name="state" class="form-control selectpicker">
       <option value=" " >Please select your id type</option>
       <option>driver licene</option>
       <option >citizenship id</option>
     </select>
-  </div>
-</div>
-</div>
+                </div>
+            </div>
+        </div>
 
 
-<!-- radio checks -->
- <!--<div class="form-group">
+        <!-- radio checks -->
+        <!--<div class="form-group">
                         <label class="col-md-4 control-label">Do you have hosting?</label>
                         <div class="col-md-4">
                             <div class="radio">
@@ -134,9 +134,9 @@
                         </div>
                     </div>-->
 
-<!-- Text area -->
-  
-<!--<div class="form-group">
+        <!-- Text area -->
+
+        <!--<div class="form-group">
   <label class="col-md-4 control-label">Project Description</label>
     <div class="col-md-4 inputGroupContainer">
     <div class="input-group">
@@ -146,16 +146,16 @@
   </div>
 </div>-->
 
-<!-- Success message -->
-<!--<div class="alert alert-success" role="alert" id="success_message">Success <i class="glyphicon glyphicon-thumbs-up"></i> Thanks for contacting us, we will get back to you shortly.</div>-->
+        <!-- Success message -->
+        <!--<div class="alert alert-success" role="alert" id="success_message">Success <i class="glyphicon glyphicon-thumbs-up"></i> Thanks for contacting us, we will get back to you shortly.</div>-->
 
-<!-- Button -->
-<div class="form-group">
- 
-  <div class="col-md-4">
-    <button type="submit" class="btn btn-warning" >save and park <span class="glyphicon glyphicon-car"></span></button>
-  </div>
-</div>
+        <!-- Button -->
+        <div class="form-group">
 
-</fieldset>
+            <div class="col-md-4">
+                <button type="submit" class="btn btn-warning" (click)="save()">save and park <span class="glyphicon glyphicon-car" ></span></button>
+            </div>
+        </div>
+
+    </fieldset>
 </form>

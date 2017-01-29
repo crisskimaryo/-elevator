@@ -9,7 +9,8 @@ import { DataService } from '../services/service.service';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-  cars = [];
+  public carlist;
+
   constructor(private router: Router, public dataService: DataService) { }
 
 
@@ -18,14 +19,18 @@ export class HomeComponent implements OnInit {
   }
 
   details(car) {
-    let info = car.id;
+    let info = car.plateno;
+    let cars = car;
     console.log(info);
 
     this.router.navigate(['/details', info]);
-    console.log('hey your click me');
+
   }
 
   carinfo() {
-    return this.cars = this.dataService.info();
+    return this.dataService.info().subscribe(data => {
+      this.carlist=data;
+      
+    });
   }
 }

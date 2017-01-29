@@ -1,21 +1,45 @@
- <div id='right'>
-      <form #log >
+<div id='right'>
+    <form #log>
         <p>Administrator Login </p>
         <input placeholder='Email' type='email'>
         <input placeholder='Password' type='password'>
-       
+
         <input value='login' (click)="login(log, menu)" type='submit'>
-      </form>
+    </form>
     <!-- Button -->
-<div class="form-group " #menu [hidden]="menu">
- <div class="col-md-4 left">
-    <button type="submit" class="btn btn-warning" (click)="home()" >Home <span class="glyphicon glyphicon-car"></span></button>
-  </div>
-  <div class="col-md-4 left">
-    <button type="submit" class="btn btn-warning" (click)="registercar()" >Register new car <span class="glyphicon glyphicon-car"></span></button>
-  </div>
-   <div class="col-md-4 left">
-    <button type="submit" class="btn btn-warning" (click)="logout(log,menu)" >Logout <span class="glyphicon glyphicon-car"></span></button>
-  </div>
-</div>
+    <div class="form-horizontal " #menu [hidden]="menu">
+
+        <div class="form-group">
+            <div class="col-md-4 ">
+                <button type="submit" class="btn btn-warning" (click)="home()">Home <span class="glyphicon glyphicon-car"></span></button>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-4 ">
+                <button type="submit" class="btn btn-warning" (click)="registercar()">Register new car <span class="glyphicon glyphicon-car"></span></button>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-4 ">
+                <button type="submit" class="btn btn-warning" (click)="logout(log,menu)">Logout <span class="glyphicon glyphicon-car"></span></button>
+            </div>
+        </div>
+
+        <div class="panel panel-default " style="color: darkslategrey">
+
+            <div class="panel-body">
+                <legend>Status Details</legend>
+                <ul class="well well-lg list-group">
+                    <li class="list-group-item">
+                        <span class="badge">4</span> Packed In Slot Number:
+                    </li>
+                    <li class="list-group-item">
+                        <span class="badge">14</span> Empty Slots:
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
     </div>
+</div>
