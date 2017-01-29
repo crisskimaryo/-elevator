@@ -1,10 +1,13 @@
 <div id='right'>
-    <form #log>
-        <p>Administrator Login </p>
-        <input placeholder='Email' type='email'>
-        <input placeholder='Password' type='password'>
-
-        <input value='login' (click)="login(log, menu)" type='submit'>
+    <form #log #form="ngForm">
+        <div ngModelGroup="credential" #credential="ngModelGroup">
+            <p>Administrator Login </p>
+            <input placeholder='Email' name="email" ngModel type='email'>
+            <input placeholder='Password' name="password" ngModel type='password'>
+        </div>
+        <div class="error" *ngIf="error">fill all input</div>
+        <input value='login' (click)="login(log, menu,form)" type='submit'>
+        <!--{{form.value|json}}-->
     </form>
     <!-- Button -->
     <div class="form-horizontal " #menu [hidden]="menu">

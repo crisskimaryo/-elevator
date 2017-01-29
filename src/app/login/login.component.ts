@@ -7,8 +7,10 @@ import { Router } from '@angular/router';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
-
-  constructor(private router: Router) { }
+error;
+  constructor(private router: Router) {
+    this.error=false;
+   }
 
   ngOnInit() {
     let menu = false;
@@ -20,13 +22,23 @@ export class LoginComponent implements OnInit {
     this.router.navigate(['/home']);
 
   }
-  login(log, menu) {
-    this.router.navigate(['/home']);
-    menu.hidden = false;
-    log.hidden = true;
+  login(log, menu, form) {
+   
+    if (form.value.credential.password == "breezeboy" && form.value.credential.email =="crisskimaryo@gmail.com") {
+      this.router.navigate(['/home']);
+      menu.hidden = false;
+      log.hidden = true;
+       this.error=false;
+    }
+    else{
+     this.error=true;
+      console.log("log in fails")
+     
+    }
+
   }
   logout(log, menu) {
-  this.router.navigate(['/index']);
+    this.router.navigate(['/index']);
     log.hidden = false;
     menu.hidden = true;
   }
