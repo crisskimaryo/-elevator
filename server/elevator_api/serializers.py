@@ -30,9 +30,10 @@ class ownerserializer(serializers.ModelSerializer):
 
 class carserializer(serializers.ModelSerializer):
     # stories = serializers.StringRelatedField(many=True)
-    stories = ownerserializer(many=True)
+    # userdata = ownerserializer(many=True)
 
 
     class Meta:
         model = carmodel
-        fields =('id','owner', 'plateno','model', 'stories')
+        fields =('owner', 'plateno','model')
+        # fields =('id','owner', 'plateno','model', 'userdata')

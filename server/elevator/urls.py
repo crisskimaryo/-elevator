@@ -24,7 +24,7 @@ from elevator_api.views import cars
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
      # url(r'^sb_api1/boo/$', books.as_view()),
-    url(r'^sb_api1/cars/$', cars.as_view()),
+    url(r'^sb_api1/post/$', cars.as_view()),
     url(r'^sb_api1/', include(router.urls)),
 
 ]

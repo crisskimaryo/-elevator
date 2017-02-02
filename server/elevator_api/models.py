@@ -14,6 +14,16 @@ class carmodel(models.Model):
 	def __str__(self):
 		return self.plateno
 
+class statusmodel(models.Model):
+	"""docstring for ClassName"""
+	status=models.IntegerField(max_length=100,null=True)
+	car= models.ForeignKey(carmodel, on_delete=models.CASCADE,null=True)
+	
+
+		
+
+	def __str__(self):
+		return self.plateno
 
 class ownermodel(models.Model):
 	"""docstring for ClassName"""
