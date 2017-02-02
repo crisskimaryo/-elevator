@@ -1,21 +1,23 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Router } from '@angular/router';
-import { DataService } from '../services/service.service';
+import { DataService } from '../../services/service.service';
 @Component({
-  selector: 'app-details',
-  templateUrl: './details.component.html',
-  styleUrls: ['./details.component.css']
+  selector: 'app-editdetails',
+  templateUrl: './editdetails.component.html',
+  styleUrls: ['./editdetails.component.css']
 })
-export class DetailsComponent implements OnInit, OnDestroy {
+export class EditdetailsComponent implements OnInit, OnDestroy {
   sub;
   id;
   platenumber;
   infolist: any[];
   public datas = [];
+  model;
   constructor(private route: ActivatedRoute, private dataService: DataService,private router:Router) {
 
   }
+
 
   ngOnInit() {
     this.carinfo()
@@ -25,6 +27,10 @@ export class DetailsComponent implements OnInit, OnDestroy {
       // console.log(this.id);
       // In a real app: dispatch action to load the details here.
     });
+
+
+
+
   }
   ngOnDestroy() {
     this.sub.unsubscribe();
@@ -46,13 +52,16 @@ export class DetailsComponent implements OnInit, OnDestroy {
     });
   }
 
+   onback(){
+    console.log('back  to details!!');
+    this.router.navigate(['/details',this.id]);
+  }
 
-  onedit(){
-    console.log('edit !!');
-    this.router.navigate(['/details/edit', this.id]);
+
+
+   onupdate(){
+console.log(this.model);
+    console.log('successful update!!');
   }
-    onback(){
-    console.log('back !!');
-    this.router.navigate(['/home']);
-  }
+
 }

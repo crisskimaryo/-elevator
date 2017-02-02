@@ -7,6 +7,7 @@ import { EmptyComponent } from './app.component';
 import { RegistationComponent } from './registation/registation.component';
 import { LoginComponent } from './login/login.component';
 import { DetailsComponent } from './details/details.component';
+import { EditdetailsComponent } from './details/editdetails/editdetails.component';
 
 const routes: Routes = [
     { path: '', redirectTo: 'index', pathMatch: 'full' },
@@ -14,6 +15,7 @@ const routes: Routes = [
     { path: 'home', component: HomeComponent },
     { path: 'registation', component: RegistationComponent },
     { path: 'details/:car', component: DetailsComponent },
+    { path: 'details/edit/:car', component: EditdetailsComponent },
     { path: 'login', component: LoginComponent },
 ];
 

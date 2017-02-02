@@ -1,0 +1,123 @@
+<form class=" well form-horizontal" action=" " method="post" style="padding-left: 10px; min-height: 610px; border:4px; border-bottom-left-radius: 10; color:black;">
+
+    <div style="float: right;top:5.1%; right: 9%; position:absolute; width: 34%;">
+        <div class="form-horizontal">
+
+            <div class="col-md-3">
+                <button class="btn btn-warning" (click)="onback()"><span style="padding-right: 7px" class="glyphicon glyphicon-circle-arrow-left " ></span>  BACK</button>
+            </div>
+        </div>
+        <div class="form-horizontal">
+
+            <div class="col-md-1">
+                <button class="btn btn-warning" (click)="onupdate(formupdate)"> <span style="padding-right: 7px" class="glyphicon glyphicon-edit " ></span>  UPDATE</button>
+            </div>
+        </div>
+    </div>
+    <!-- Form Name -->
+    <legend>Car Info</legend>
+
+
+    <!-- Text input-->
+    <div #formupdate>
+        <div class="form-group">
+            <div class=" form-horizontal">
+
+                <div class="col-md-5 control-label">
+                    <div class="label-info">
+
+                        <input name="Plate Number" placeholder="PLATE NO : {{datas.plateno}}" value="PLATE NO : {{datas.plateno}}" class="form-control" formupdate.plateno type="text">
+                    </div>
+                </div>
+
+
+
+            </div>
+
+            <div class="form-horizontal">
+
+                <div class="col-md-5 control-label">
+                    <div class="label-info">
+                        <input name="Plate Number" placeholder="MODEL/TYPE: {{datas.model}}" value="{{datas.model}}" class="form-control" [(ngModel)]="model" type="text">
+
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+
+        <legend>Owner Details</legend>
+
+        <!-- Text input-->
+        <div class="form-group">
+            <div class=" form-horizontal">
+
+                <div class="col-md-5 control-label ">
+                    <div class="label-info">
+                        <input name="Plate Number" placeholder="OWNER NAME: {{datas.owner}}" value="OWNER NAME: {{datas.owner}}" class="form-control" type="text">
+
+                    </div>
+                </div>
+            </div>
+            <div class=" form-horizontal">
+
+                <div class="col-md-5 control-label ">
+                    <div class="label-info">
+                        <input name="Plate Number" placeholder="LICENCE TYPE :{{datas.owner}}" value="LICENCE TYPE :{{datas.owner}}" class="form-control" type="text">
+
+                    </div>
+                </div>
+            </div>
+            <div class=" form-horizontal">
+
+                <div class="col-md-5 control-label ">
+                    <div class="label-info">
+                        <input name="Plate Number" placeholder=" MOBILE :{{datas.owner}}" value=" MOBILE :{{datas.owner}}" class="form-control" type="text">
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-horizontal">
+
+                <div class="col-md-5 control-label">
+                    <div class="label-info">
+                        <input name="Plate Number" placeholder="LICENCE NUMBER : {{datas.model}}" value="LICENCE NUMBER : {{datas.model}}" class="form-control" type="text">
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-horizontal">
+
+                <div class="col-md-5 control-label">
+                    <div class="label-info">
+                        <input name="Plate Number" placeholder="ADDRESS : {{datas.model}}" value="ADDRESS : {{datas.model}}" class="form-control" type="text">
+
+                    </div>
+                </div>
+            </div>
+            <div class="form-horizontal">
+
+                <div class="col-md-5 control-label">
+                    <div class="label-info">
+                        <input name="Plate Number" placeholder="LICENCE NUMBER : {{datas.model}}" value="LICENCE NUMBER : {{datas.model}}" class="form-control" type="text">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <div class="form-group">
+
+                <div class="col-md-4">
+                    <button type="submit" class="btn btn-warning">UNPARK <span class="glyphicon glyphicon-circle-arrow-left" ></span></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
